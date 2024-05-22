@@ -26,3 +26,10 @@ body {
     font-size: 24px;
   }
   
+.safe{
+  border-collapse: collapse;
+}
+
+/* .cell-0-0{
+  color: red;
+} */
