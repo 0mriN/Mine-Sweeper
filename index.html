@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine Sweeper</title>
     <h1>Mine Sweeper!</h1>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="onInIt()" >
+<body onload="onInIt()">
+    <div class="time"> Time: <span class="timer">0.00</span></div>
+    <button class="restart" onclick="onInIt()" title="Restart">😃</button>
+    <div class="time"> HighScore: <span class="highScore">0</span></div>
+    <div class="difficulty">
+
+    </div>
     <table class="center">
         <tbody class="board">
 
         </tbody>
+
     </table>
+    <footer>Made By Omri Nadav</footer>
+    <button data-size="4" onclick="chooseDifficultyLevel(4)" title="4*4">Easy</button>
+    <button data-size="8" onclick="chooseDifficultyLevel(8)" title="8*8">Medium</button>
+    <button data-size="12" onclick="chooseDifficultyLevel(12)" title=12*12>Expert</button>
+
     <script src="js/utils.js"></script>
     <script src="js/MineSweeper.js"></script>
 </body>

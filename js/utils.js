@@ -52,7 +52,7 @@ function copyMat(mat) {
     return newMat
 }
 
-function countNegs(cellI, cellJ, mat) { // 7,0
+function setMinesNegsCount(cellI, cellJ, mat) { 
     var negsCount = 0
     for (var i = cellI - 1; i <= cellI + 1; i++) {
         if (i < 0 || i >= mat.length) continue
@@ -67,23 +67,18 @@ function countNegs(cellI, cellJ, mat) { // 7,0
 }
 
 function findEmptyPos() {
-    // var emptyPoss = [{i:0,j:0},{i:0,j:1}]
     var emptyPoss = []
 
     for (var i = 0; i < gBoard.length; i++) {
         for (var j = 0; j < gBoard.length; j++) {
             var cell = gBoard[i][j]
             if (!cell) {
-                // console.log('cell:', cell)
                 var pos = { i: i, j: j }
                 emptyPoss.push(pos)
             }
         }
     }
-    // console.log('emptyPoss:', emptyPoss)
-    var randIdx = getRandomInt(0, emptyPoss.length) // 0 , 1
-    // console.log('randIdx:', randIdx)
-    var randPos = emptyPoss[randIdx] //{}
-    // console.log('randPos:', randPos)
+    var randIdx = getRandomInt(0, emptyPoss.length) 
+    var randPos = emptyPoss[randIdx] 
     return randPos
 }
