@@ -1,62 +1,101 @@
- h1 {
-   text-align: center;
-   border: dotted rgb(0, 0, 0);
- }
+h1 {
+  text-align: center;
+  font-family: URW Chancery L, cursive;
+}
 
- body {
-  background-image:url(../img/mines.jpg);
-   text-align: center;
- }
+body {
+  background-image: url(../img/mines.jpg);
+  text-align: center;
+}
 
- .board td {
-   margin: auto;
-   /* box-shadow: 18px 25px 16px 14px rgba(0, 0, 0, 0.56); */
-   border-style: solid;
- }
+.board td {
+  margin: auto;
+  box-shadow: 18px 25px 16px 14px rgba(0, 0, 0, 0.56);
+  /* border-style: solid; */
+}
 
 
- .center {
-   margin: auto
- }
+.center {
+  margin: auto
+}
 
- .cell {
-   width: 40px;
-   height: 40px;
-   font-size: 24px;
-   transition: 0.5s;
- }
+.cell {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  transition: 0.5s;
+}
 
- .safe {
-   border-collapse: collapse;
- }
+.safe {
+  border-collapse: collapse;
+}
 
- .center {
-   margin-top: 1%;
-   display: inline-block;
-   border-style: dashed;
-   justify-content: center;
-   align-items: center;
- }
+.center {
+  margin-top: 1%;
+  display: inline-block;
+  /* border-style: dashed; */
+  justify-content: center;
+  align-items: center;
+}
 
- td {
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   transition: 0.5s;
-   border: 3px solid white;
-   background-color: rgb(184, 181, 181);
-   box-shadow: 3px 7px 25px black;
-   font-weight: bolder;
-   font-size: xx-large;
-   cursor: pointer;
- }
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  transition: 0.5s;
+  border: 3px solid white;
+  background-color: rgb(184, 181, 181);
+  box-shadow: 3px 7px 25px black;
+  font-weight: bolder;
+  font-size: xx-large;
+  cursor: pointer;
+}
 
- .clicked {
-   transition: 0.5s;
-   background-color: white;
- }
+.clicked {
+  transition: 0.5s;
+  background-color: white;
+}
 
- .time{
+.time {
   display: inline;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+}
+
+footer {
+  font-family: URW Chancery L, cursive;
+  color: rgb(11, 206, 212);
+}
+
+.difficulty {
+  display: inline block;
+
+}
+
+.modal {
+background-color: antiquewhite;
+position: absolute;
+width:230px ;
+height: 100px;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+background-size: 230px;
+background-image: url(../img/mines.jpg);
+background-position-x:center;
+background-position-y:310px;
+color: rgb(red);
+font-family: URW Chancery L, cursive;
+}
+ 
+
+
+.difficulty {
+  /* width: 100px;
+  height: 50px; */
+  border-radius: 25px;
+}
+
+.hint{
+  display:inline-block;
+}

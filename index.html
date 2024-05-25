@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine Sweeper</title>
-    <h1>Mine Sweeper!</h1>
+    <div class="header">
+        <h1>Mine Sweeper!</h1>
+    </div>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body onload="onInIt()">
+    <div class="lives-container"><span class="lives">🖤🖤🖤</span> </div>
     <div class="time"> Time: <span class="timer">0.00</span></div>
-    <button class="restart" onclick="onInIt()" title="Restart">😃</button>
+    <button class="restart" onclick="onInIt()" title="restart">😃</button>
     <div class="time"> HighScore: <span class="highScore">0</span></div>
-    <div class="difficulty">
+    <div>
 
-    </div>
-    <table class="center">
-        <tbody class="board">
+        <div class="modal">
+            <h3>GAME-OVER!</h3>
+            <h2>VICTORY!</h2>
+            <button class="restart" onclick="onInIt()" title="restart">Restart</button>
+        </div>
+        <table class="center">
+            <tbody class="board">
 
-        </tbody>
+            </tbody>
 
-    </table>
-    <footer>Made By Omri Nadav</footer>
-    <button data-size="4" onclick="chooseDifficultyLevel(4)" title="4*4">Easy</button>
-    <button data-size="8" onclick="chooseDifficultyLevel(8)" title="8*8">Medium</button>
-    <button data-size="12" onclick="chooseDifficultyLevel(12)" title=12*12>Expert</button>
-
-    <script src="js/utils.js"></script>
-    <script src="js/MineSweeper.js"></script>
+        </table>
+        <footer>Made By Omri Nadav</footer>
+        <div class="difficulty">
+            <button data-size="4" onclick="chooseDifficultyLevel(4)" title="4*4">Easy</button>
+            <button data-size="8" onclick="chooseDifficultyLevel(8)" title="8*8">Medium</button>
+            <button data-size="12" onclick="chooseDifficultyLevel(12)" title=12*12>Expert</button>
+            <!-- <div><button class="hint" onclick="hints()">💡</span></div>
+            <div><button class="hint" onclick="hints()">💡</span></div>
+            <div><button class="hint" onclick="hints()">💡</span></div> -->
+        </div>
+        <script src="js/utils.js"></script>
+        <script src="js/MineSweeper.js"></script>
 </body>
 
 </html>
